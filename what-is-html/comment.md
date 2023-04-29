@@ -6,7 +6,7 @@ To create an HTML comment, you can use the `<!--` and `-->` tags. Anything that 
 
 Here is an example of an HTML comment:
 
-```
+```html
 <!-- This is an HTML comment -->
 ```
 
@@ -14,7 +14,7 @@ You can also use comments to disable parts of the code by commenting out the cod
 
 Here is an example of how to disable part of the code using an HTML comment:
 
-```
+```html
 <!--
   <p>This paragraph will not be displayed because it is commented out.</p>
 -->

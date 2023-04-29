@@ -14,7 +14,7 @@ Hexadecimal values, also known as hex values, are used to specify colors using a
 
 Here is an example of how to use a hex value to set the color of a text element in CSS:
 
-```javascript
+```css
 p { color: #FF0000; } 
 ```
 
@@ -22,7 +22,7 @@ In addition to RGB and hex values, CSS also supports a set of predefined color n
 
 Here is an example of how to use a predefined color name to set the color of a text element in CSS:
 
-```javascript
+```css
 p { color: red; } 
 ```
 

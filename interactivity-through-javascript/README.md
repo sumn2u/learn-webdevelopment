@@ -35,4 +35,3 @@ Here are some examples of what you can do with JavaScript:
 
 JavaScript is an essential part of modern web development, and it is used in many websites and web applications to provide interactive and dynamic functionality.
 
-\

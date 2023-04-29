@@ -4,15 +4,23 @@ Rendering engines are responsible for displaying requested content on the browse
 
 The rendering engine receives the contents of the requested document from the networking layer in chunks. Most of these chunks are of 8kB in size. The basic flow of the rendering engine is shown below.
 
-<figure><img src="https://miro.medium.com/max/1200/0*MW2OMgICiyuchnom.png" alt=""><figcaption><p>Fig: Basic Flow of Rendering Engine</p></figcaption></figure>
+
+![Basic Flow of Rendering Engine](../.gitbook/assets/render-flow.png)
+<div align="center">
+Fig: Basic Flow of Rendering Engine
+</div>
 
 Let’s take an example of this design and render it in a browser.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>404 page</p></figcaption></figure>
+![404 page](../.gitbook/assets/image.png)
+
+<div align="center">
+Fig: 404 page
+</div>
 
 The HTML code for the above design is given below.
 
-```javascript
+```html
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -47,7 +55,7 @@ The HTML code for the above design is given below.
 
 The rendering of the above-mentioned code in the browser is mentioned below.
 
-1. **Parsing HTML to construct the DOM tree**
+**1. Parsing HTML to construct the DOM tree**
 
 The rendering engine parses the chunks of HTML document and converts the elements to **D**ocument **O**bject **M**odel (DOM) nodes in a tree called the “**content tree**” or the “**DOM tree**”. Here, each node represents an HTML tag.
 
@@ -55,7 +63,11 @@ It also parses CSS style present in the webpage and creates a **CSS** **O**bject
 
 The DOM tree representation of our HTML is shown below.
 
-<figure><img src="https://miro.medium.com/max/1400/1*tmznC6ph7WN1T0AxnzqPtg.png" alt=""><figcaption><p>Fig. DOM Tree</p></figcaption></figure>
+![DOM Tree](../.gitbook/assets/dom-tree.jpg)
+
+<div align="center">
+Fig: DOM Tree
+</div>
 
 **2. Render tree construction**
 
@@ -71,9 +83,7 @@ The root renderer is at the position `0,0` and its dimensions are the viewport, 
 
 To display the content on the screen, the renderer tree is traversed and the `paint()`method is called. In order to provide a better user experience, the rendering engine displays content as soon as possible. It will begin building and laying out the render tree before all the HTML has been parsed.
 
-{% embed url="https://codepen.io/sumn2u/pen/RwoYZGR" %}
-404 Design
-{% endembed %}
+[](codepen://sumn2u/RwoYZGR?height=268&defaultTab=result)
 
 ### Let’s summarise <a href="#48aa" id="48aa"></a>
 

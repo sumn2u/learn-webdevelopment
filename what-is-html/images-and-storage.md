@@ -6,7 +6,7 @@ If the image is stored on the same server as the HTML document, you can use a re
 
 For example, if the HTML document is in a folder called "`html`" and the image file is in a folder called "**images**", you can use the following code to add the image to the HTML document:
 
-```javascript
+```html
 <img src="/images/cat.jpg" alt="A cute cat"> 
 ```
 
@@ -14,7 +14,7 @@ If the image is stored on a different server, you can use an absolute URL in the
 
 For example, if the image file is stored on the server "[https://www.example.com](https://www.example.com/)", you can use the following code to add the image to the HTML document:
 
-```javascript
+```html
 <img src="https://www.example.com/images/cat.jpg" alt="A cute cat">
 ```
 

@@ -9,13 +9,13 @@ Here are some basic rules for HTML syntax:
 * The head of the document is contained within the `<head>` element.
 * The body of the document is contained within the `<body>` element.
 * HTML elements are represented by tags, which are keywords surrounded by angle brackets. For example, the `<p>` tag represents a paragraph element.
-* Most HTML tags come in pairs, with an opening tag and a closing tag. The closing tag is identical to the opening tag, but with a forward slash `(/)` before the tag name. For example, the \<p> tag has a corresponding closing tag of `</p>`.
+* Most HTML tags come in pairs, with an opening tag and a closing tag. The closing tag is identical to the opening tag, but with a forward slash `(/)` before the tag name. For example, the &lt;p> tag has a corresponding closing tag of `</p>`.
 * HTML tags are usually written in lowercase.
 * HTML elements should be nested properly, with the innermost element being the first to be closed.
 
 Here is an example of a simple HTML document that demonstrates these rules:
 
-```javascript
+```html
 <!DOCTYPE html>
 <html>
   <head>

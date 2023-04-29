@@ -14,7 +14,7 @@ Here are some common elements for formatting text in HTML:
 
 Here is an example of how these elements could be used in an HTML document:
 
-```javascript
+```html
 <!DOCTYPE html>
 <html>
   <head>

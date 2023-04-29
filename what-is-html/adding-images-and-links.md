@@ -10,7 +10,7 @@ Here is an example of how to add an image to an HTML document:
 <img src="/images/cat.jpg" alt="A cute cat">
 ```
 
-To add a link to an HTML document, you can use the \<a> element. The `href` attribute of the `<a>` element specifies the URL of the link, and the content inside the `<a>` element represents the text of the link.
+To add a link to an HTML document, you can use the &lt;a> element. The `href` attribute of the `<a>` element specifies the URL of the link, and the content inside the `<a>` element represents the text of the link.
 
 Here is an example of how to add a link to an HTML document:
 
@@ -22,7 +22,7 @@ You can also add images and links inside other elements, such as headings, parag
 
 Here is an example of an HTML document with images and links:
 
-```javascript
+```html
 <!DOCTYPE html>
 <html>
   <head>

@@ -11,8 +11,8 @@ You can add an event listener to an element using the `addEventListener` method.
 Example:
 
 ```javascript
-var button = document.getElementById("myButton");
-button.addEventListener("click", function() {
+const button = document.getElementById("myButton");
+button.addEventListener("click", () => {
   console.log("Button was clicked");
 });
 ```
@@ -22,8 +22,8 @@ You can also use the `on` syntax to attach an event listener to an element.
 Example:
 
 ```javascript
-var button = document.getElementById("myButton");
-button.onclick = function() {
+const button = document.getElementById("myButton");
+button.onclick = ()  => {
   console.log("Button was clicked");
 };
 ```
@@ -35,7 +35,7 @@ You can also use the `event` object to get information about the event, such as 
 Example:
 
 ```javascript
-document.addEventListener("click", function(event) {
+document.addEventListener("click", (event) => {
   console.log(event.type);       // prints "click"
   console.log(event.target);     // prints the element that was clicked
   console.log(event.clientX);    // prints the x coordinate of the mouse

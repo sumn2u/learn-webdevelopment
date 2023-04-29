@@ -1,0 +1,797 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <title>Browsers and their working mechanisms · Learn Webdevelopment</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 4.0.7">
+        <meta name="author" content="Suman Kunwar">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="rendering-engine-flow.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Browsers and their working mechanisms
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="rendering-engine-flow.html">
+            
+                <a href="rendering-engine-flow.html">
+            
+                    
+                    Rendering Engine Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../what-is-html/">
+            
+                <a href="../what-is-html/">
+            
+                    
+                    What is HTML?
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../what-is-html/html-structure.html">
+            
+                <a href="../what-is-html/html-structure.html">
+            
+                    
+                    HTML Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../what-is-html/html-syntax.html">
+            
+                <a href="../what-is-html/html-syntax.html">
+            
+                    
+                    HTML Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../what-is-html/comment.html">
+            
+                <a href="../what-is-html/comment.html">
+            
+                    
+                    Comment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../what-is-html/metadata-and-sectioning-elements.html">
+            
+                <a href="../what-is-html/metadata-and-sectioning-elements.html">
+            
+                    
+                    Metadata and Sectioning Elements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../what-is-html/formatting-text-and-nesting-tags.html">
+            
+                <a href="../what-is-html/formatting-text-and-nesting-tags.html">
+            
+                    
+                    Formatting Text and Nesting Tags
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../what-is-html/images-and-storage.html">
+            
+                <a href="../what-is-html/images-and-storage.html">
+            
+                    
+                    Images and Storage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../what-is-html/adding-images-and-links.html">
+            
+                <a href="../what-is-html/adding-images-and-links.html">
+            
+                    
+                    Adding images and links
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../what-is-html/lists-and-tables.html">
+            
+                <a href="../what-is-html/lists-and-tables.html">
+            
+                    
+                    Lists and Tables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../what-is-html/links-and-bookmarks.html">
+            
+                <a href="../what-is-html/links-and-bookmarks.html">
+            
+                    
+                    Links and Bookmarks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../what-is-html/html-forms.html">
+            
+                <a href="../what-is-html/html-forms.html">
+            
+                    
+                    HTML Forms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../what-is-html/input-elements.html">
+            
+                <a href="../what-is-html/input-elements.html">
+            
+                    
+                    Input Elements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../what-is-html/media-elements.html">
+            
+                <a href="../what-is-html/media-elements.html">
+            
+                    
+                    Media Elements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../what-is-html/html-api.html">
+            
+                <a href="../what-is-html/html-api.html">
+            
+                    
+                    HTML API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../css-to-design-web-pages/">
+            
+                <a href="../css-to-design-web-pages/">
+            
+                    
+                    CSS to Design Web Pages
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../css-to-design-web-pages/css-selectors.html">
+            
+                <a href="../css-to-design-web-pages/css-selectors.html">
+            
+                    
+                    CSS Selectors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../css-to-design-web-pages/colors-and-names-in-css.html">
+            
+                <a href="../css-to-design-web-pages/colors-and-names-in-css.html">
+            
+                    
+                    Colors and Names in CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../css-to-design-web-pages/padding-and-margins.html">
+            
+                <a href="../css-to-design-web-pages/padding-and-margins.html">
+            
+                    
+                    Padding and Margins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../css-to-design-web-pages/layouts-and-animations.html">
+            
+                <a href="../css-to-design-web-pages/layouts-and-animations.html">
+            
+                    
+                    Layouts and Animations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../css-to-design-web-pages/css-tabs-and-navigation.html">
+            
+                <a href="../css-to-design-web-pages/css-tabs-and-navigation.html">
+            
+                    
+                    CSS Tabs and Navigation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../css-to-design-web-pages/responsiveness.html">
+            
+                <a href="../css-to-design-web-pages/responsiveness.html">
+            
+                    
+                    Responsiveness
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../css-to-design-web-pages/css-mixins.html">
+            
+                <a href="../css-to-design-web-pages/css-mixins.html">
+            
+                    
+                    CSS Mixins
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../interactivity-through-javascript/">
+            
+                <a href="../interactivity-through-javascript/">
+            
+                    
+                    Interactivity through JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../interactivity-through-javascript/variable-and-methods.html">
+            
+                <a href="../interactivity-through-javascript/variable-and-methods.html">
+            
+                    
+                    Variable and Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../interactivity-through-javascript/types-in-javascript.html">
+            
+                <a href="../interactivity-through-javascript/types-in-javascript.html">
+            
+                    
+                    Types in JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../interactivity-through-javascript/conditional-logic.html">
+            
+                <a href="../interactivity-through-javascript/conditional-logic.html">
+            
+                    
+                    Conditional Logic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../interactivity-through-javascript/looping-in-javascript.html">
+            
+                <a href="../interactivity-through-javascript/looping-in-javascript.html">
+            
+                    
+                    Looping in JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../interactivity-through-javascript/getting-data-from-server.html">
+            
+                <a href="../interactivity-through-javascript/getting-data-from-server.html">
+            
+                    
+                    Getting data from Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../interactivity-through-javascript/events-in-javascript.html">
+            
+                <a href="../interactivity-through-javascript/events-in-javascript.html">
+            
+                    
+                    Events in JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../interactivity-through-javascript/animation-using-javascript.html">
+            
+                <a href="../interactivity-through-javascript/animation-using-javascript.html">
+            
+                    
+                    Animation  using JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../interactivity-through-javascript/debugging-in-javascript.html">
+            
+                <a href="../interactivity-through-javascript/debugging-in-javascript.html">
+            
+                    
+                    Debugging in JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://leanpub.com/learnjavascriptbeginnersguide/signup" target="_blank">
+      
+        <img src="https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x" />
+      
+        </a>
+      
+      
+        <p>Get free pdf and epub version by joining on wishlist! ✨</p>
+      
+      
+      <a href="https://leanpub.com/learnjavascriptbeginnersguide/signup" class="btn" target="_blank">
+        Read now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Browsers and their working mechanisms</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="browsers-and-their-working-mechanisms">Browsers and their working mechanisms</h1>
+<p>Browsers are one of the most widely used applications. Through its graphical user interface, a browser lets users access and display web pages or other online content. Chrome, Safari, and Opera are some examples of desktop browsers whereas Android Browser, iPhone, and UC Browser are examples of mobile browsers.</p>
+<p>Browsers are responsible for presenting the web resources such as web pages, pdf, videos, and other files that one chooses by requesting them from the server. Learning the internal operation of the browser helps to make better decisions with the justifications behind the development of best practices.</p>
+<blockquote>
+<p>Chrome usage is higher worldwide as per <a href="http://gs.statcounter.com/" target="_blank">StatCounter statistics</a> (as of Jan 2023).</p>
+</blockquote>
+<p><img src="../.gitbook/assets/browser-components.png" alt="Browser Components"></p>
+<div align="center">
+Fig: Browser Components
+</div>
+
+<p>The browser&apos;s main components are listed below.</p>
+<ol>
+<li><strong>The User Interface</strong>: Users interact with the browser through the user interface. Address bar, back and next buttons, home button, refresh and stop, and bookmark option are some of the examples through which they can interact. Here, things that are displayed in the browser except for the window where the requested page is displayed come under it.</li>
+<li><strong>The Browser Engine</strong>: It acts as a bridge between User Interface and Rendering Engine and communicates with the Data Storage Component. In response to inputs from various user interfaces, it queries and manipulates the rendering engine and stores data in Data Storage.</li>
+<li><strong>The Rendering Engine:</strong> It is responsible for displaying requested content. The requested content may vary depending on the data types and require plugins. For HTML content, it parses HTML and CSS, and displays the parsed content on the screen.</li>
+<li><strong>Networking:</strong> It is responsible for handling network tasks such as HTTP requests, Web Sockets, and Web RTC (Uses Real-Time Transport Protocol, which uses UDP). This component may implement a cache of retrieved documents in order to reduce network traffic.</li>
+<li><strong>UI Backend:</strong> It is used for drawing basic widgets like combo boxes and windows. This backend exposes a generic interface that is not platform specific and uses operating system user interface methods.</li>
+<li><strong>JavaScript Interpreter:</strong> This component interprets and executes the javascript code. After interpretation results are sent to the rendering engine. For external script, it first fetches the resource from the network and holds the parser until the script is executed.</li>
+<li><strong>Data Storage:</strong> This is a persistence layer and is used for storing cookies, cache, bookmarks, and preferences through storage mechanisms such as localStorage, IndexedDB, WebSQL, and FileSystem.</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="rendering-engine-flow.html" class="navigation navigation-next " aria-label="Next page: Rendering Engine Flow">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Browsers and their working mechanisms","level":"1.2","depth":1,"next":{"title":"Rendering Engine Flow","level":"1.2.1","depth":2,"path":"browsers-and-their-working-mechanisms/rendering-engine-flow.md","ref":"browsers-and-their-working-mechanisms/rendering-engine-flow.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"articles":[{"title":"Rendering Engine Flow","level":"1.2.1","depth":2,"path":"browsers-and-their-working-mechanisms/rendering-engine-flow.md","ref":"browsers-and-their-working-mechanisms/rendering-engine-flow.md","articles":[]}],"dir":"ltr"},"config":{"totalpages":107,"plugins":["hints","theme-creative","sidebar-ad","intopic-toc","sharing","exercises","sitemap","i18nsettings","favicon-custom","chapter-fold","hide-published-with","edit-link","codepen","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"i18nsettings":{"language":"en","languages":[{"config":"en","text":"English"},{"config":"tr","text":"Turkish"}]},"chapter-fold":{},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this Chapter"},"livereload":{},"search":{},"favicon-custom":{"favicon":"./favicon.ico","appleTouchIconPrecomposed152":"./favicon.ico"},"codepen":{"height":400,"theme":14038,"description":"somepen","defaultTab":"html"},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-creative":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ad":{"imageUrl":"https://d2sofvawe08yqg.cloudfront.net/learnjavascriptbeginnersguide/s_hero2x","url":"https://leanpub.com/learnjavascriptbeginnersguide/signup","description":"Get free pdf and epub version by joining on wishlist! ✨","btnText":"Read now!"},"highlight":{},"favicon":"favicon.ico","sitemap":{"hostname":"https://webdevelopment.sumankunwar.com.np/"},"appleTouchIconPrecomposed152":"js.png","exercises":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"","base":"https://github.com/sumn2u/learn-webdevelopment/edit/main"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[1,2,3,10,40],"copyright":"Suman Kunwar","theme":"default","keywords":"learn webdevelopment, beginners lessons","author":"Suman Kunwar","published":"12/22/2022","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":32,"left":32,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[1,2,3,10,40],"isbn":"","variables":{},"title":"Learn Webdevelopment","language":"en","website":"https://webdevelopment.sumankunwar.com.np","gitbook":"*","description":"Beginners guide for learning web development"},"file":{"path":"browsers-and-their-working-mechanisms/README.md","mtime":"2023-04-29T16:00:29.192Z","type":"markdown"},"gitbook":{"version":"4.0.7","time":"2023-04-29T16:24:16.292Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
+        
+    
+        
+        <script src="../gitbook/honkit-plugin-i18nsettings/i18nsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-codepen/embed-codepen.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+
+    </body>
+</html>
+

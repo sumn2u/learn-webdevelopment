@@ -4,7 +4,7 @@ An HTML document has a basic structure that consists of a `head` and a `body`. T
 
 Here is a basic example of the structure of an HTML document:
 
-```javascript
+```html
 <html>
   <head>
     <title>Page Title</title>

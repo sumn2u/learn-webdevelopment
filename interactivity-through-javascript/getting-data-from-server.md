@@ -5,12 +5,12 @@ To get data from a server using JavaScript, you can use the `XMLHttpRequest` obj
 Here is an example of how to use the `XMLHttpRequest` object to make a GET request to a server and retrieve data:
 
 ```javascript
-var xhr = new XMLHttpRequest();
+const xhr = new XMLHttpRequest();
 xhr.open("GET", "http://example.com/data.json");
 xhr.onload = function() {
   if (xhr.status == 200) {
     // success
-    var data = JSON.parse(xhr.responseText);
+    const data = JSON.parse(xhr.responseText);
     console.log(data);
   } else {
     // error
@@ -27,13 +27,13 @@ Here is an example of how to use the `fetch` function to make a GET request to a
 
 ```javascript
 fetch("http://example.com/data.json")
-  .then(function(response) {
+  .then((response) => {
     return response.json();
   })
-  .then(function(data) {
+  .then((data) => {
     console.log(data);
   })
-  .catch(function(error) {
+  .catch((error) => {
     console.error(error);
   });
 ```

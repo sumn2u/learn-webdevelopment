@@ -7,7 +7,7 @@ The `if` statement is used to execute a block of code if a condition is true.
 Example:
 
 ```javascript
-var x = 10;
+let x = 10;
 if (x > 5) {
   console.log("x is greater than 5");
 }
@@ -18,7 +18,7 @@ The `if` statement can be extended with an `else` clause to execute a different 
 Example:
 
 ```javascript
-var x = 10;
+let x = 10;
 if (x > 5) {
   console.log("x is greater than 5");
 } else {
@@ -31,7 +31,7 @@ The `if` statement can also be extended with one or more `else if` clauses to te
 Example:
 
 ```javascript
-var x = 10;
+let x = 10;
 if (x > 20) {
   console.log("x is greater than 20");
 } else if (x > 10) {
@@ -46,7 +46,7 @@ In JavaScript, you can also use the `switch` statement to execute different code
 Example:
 
 ```javascript
-var x = "hello";
+let x = "hello";
 switch (x) {
   case "hello":
     console.log("x is hello");

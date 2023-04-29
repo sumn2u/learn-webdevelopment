@@ -7,7 +7,7 @@ The `for` loop is used to execute a block of code a specified number of times.
 Example:
 
 ```javascript
-for (var i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
   console.log(i);
 }
 ```
@@ -19,7 +19,7 @@ The `while` loop is used to execute a block of code as long as a condition is tr
 Example:
 
 ```javascript
-var i = 0;
+let i = 0;
 while (i < 10) {
   console.log(i);
   i++;
@@ -47,11 +47,9 @@ In JavaScript, you can also use the `break` and `continue` statements to control
 Example:
 
 ```javascript
-for (var i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
   if (i % 2 == 0) continue;  // skip even numbers
   if (i > 5) break;         // exit loop when i is greater than 5
   console.log(i);            // prints 1, 3, 5
 }
 ```
-
-\

@@ -7,8 +7,8 @@ In JavaScript, there are several types of data that you can use in your programs
 Example:
 
 ```javascript
-var x = 10;
-var y = 3.14;
+const x = 10;
+const y = 3.14;
 ```
 
 * String: A sequence of characters. Strings can be enclosed in single or double quotes.
@@ -16,8 +16,8 @@ var y = 3.14;
 Example:
 
 ```javascript
-var str = "hello";
-var str2 = 'world';
+const str = "hello";
+const str2 = 'world';
 ```
 
 * Boolean: A value that represents true or false.
@@ -25,8 +25,8 @@ var str2 = 'world';
 Example:
 
 ```javascript
-var flag = true;
-var flag2 = false;
+const flag = true;
+const flag2 = false;
 ```
 
 * Null: A value that represents the absence of a value.
@@ -34,7 +34,7 @@ var flag2 = false;
 Example:
 
 ```javascript
-var x = null;
+const x = null;
 ```
 
 * Undefined: A value that represents the absence of a value that has not been assigned.
@@ -42,7 +42,7 @@ var x = null;
 Example:
 
 ```javascript
-var x;
+const x;
 console.log(x);  // prints undefined
 ```
 
@@ -51,7 +51,7 @@ console.log(x);  // prints undefined
 Example:
 
 ```javascript
-var obj = {
+const obj = {
   name: "John",
   age: 30
 };

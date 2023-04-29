@@ -42,4 +42,4 @@ Example:
 }
 ```
 
-CSS mixins are a powerful tool for organizing and maintaining your styles. They allow you to create reusable and customizable styles that can be easily updated and maintained, and that can be shared between different stylesheets.\
+CSS mixins are a powerful tool for organizing and maintaining your styles. They allow you to create reusable and customizable styles that can be easily updated and maintained, and that can be shared between different stylesheets.

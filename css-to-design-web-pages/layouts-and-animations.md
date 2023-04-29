@@ -40,4 +40,3 @@ Example:
 
 The `animation` property takes several values, including the name of the animation (`slidein` in this case), the duration of the animation (`2s` in this case), and other optional values such as the timing function and the number of times the animation should be played.
 
-\

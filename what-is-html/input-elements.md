@@ -4,19 +4,19 @@ The `<input>` element is used to create input fields in HTML forms. The `type` a
 
 Here is an example of how to create a text input field:
 
-```javascript
+```html
 <input type="text">
 ```
 
 Here is an example of how to create an email input field:
 
-```javascript
+```html
 <input type="email">
 ```
 
 Here is an example of how to create a radio button:
 
-```javascript
+```html
 <input type="radio" name="gender" value="male"> Male<br>
 <input type="radio" name="gender" value="female"> Female<br>
 ```
@@ -27,10 +27,8 @@ In addition to the `type` attribute, the `<input>` element also supports various
 
 Here is an example of how to use the `value` and `placeholder` attributes:
 
-```javascript
+```html
 <input type="text" value="John Doe" placeholder="Enter your name">
 ```
 
 The `<input>` element can be styled using CSS to match the design of the website. It can be placed inside a `<form>` element or used as a standalone element.
-
-\

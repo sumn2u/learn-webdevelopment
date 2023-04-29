@@ -9,7 +9,7 @@ One of the most basic techniques is using the `console.log` function to print me
 Example:
 
 ```javascript
-var x = 10;
+let x = 10;
 console.log(x);  // prints 10
 ```
 
@@ -33,12 +33,12 @@ To use a debugger, you can set breakpoints in your code using the debugger keywo
 Example:
 
 ```javascript
-function add(x, y) {
+const = add(x, y) => {
   debugger;  // set a breakpoint
   return x + y;
 }
 
-var result = add(1, 2);
+let result = add(1, 2);
 ```
 
 Debugging is an important part of the development process, and it can help you find and fix errors in your code. By using the `console`, the `console.error` function, and a debugger, you can effectively debug your JavaScript code and improve the quality of your programs.

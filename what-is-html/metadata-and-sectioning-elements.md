@@ -19,7 +19,7 @@ Sectioning elements:
 
 Here is an example of how these elements could be used in an HTML document:
 
-```javascript
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -58,7 +58,7 @@ Here is an example of how these elements could be used in an HTML document:
       </section>
     </main>
     <footer>
-      <p>Copyright 2021</p>
+      <p>Copyright 2023</p>
       <p>Contact: <a href="mailto:info@mywebsite.com">info@mywebsite.com</a>
       </p>
     </footer>

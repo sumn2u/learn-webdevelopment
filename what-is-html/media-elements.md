@@ -6,7 +6,7 @@ To add audio content, you can use the `<audio>` element. The `src` attribute of 
 
 Here is an example of how to add an audio player to an HTML document:
 
-```css
+```html
 <audio src="/audio/song.mp3" controls></audio>
 ```
 
@@ -14,7 +14,7 @@ To add video content, you can use the `<video>` element. The `src` attribute of 
 
 Here is an example of how to add a video player to an HTML document:
 
-```css
+```html
 <video src="/video/movie.mp4" controls></video>
 ```
 
@@ -22,13 +22,13 @@ Both the `<audio>` and `<video>` elements support various attributes that allow 
 
 Here is an example of how to use the `autoplay` and `loop` attributes:
 
-```css
+```html
 <audio src="/audio/song.mp3" controls autoplay loop></audio>
 ```
 
 You can also use the `<source>` element inside the `<audio>` and `<video>` elements to specify multiple sources for the media, allowing the browser to choose the best source based on its availability and compatibility.
 
-```bash
+```html
 <audio controls>
   <source src="/audio/song.mp3" type="audio/mpeg">
   <source src="/audio/song.ogg" type="audio/ogg">

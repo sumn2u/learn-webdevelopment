@@ -10,7 +10,7 @@ CSS is applied to an HTML document in one of three ways:
 2. Internal styles: You can define styles within the `<style>` element in the head of the HTML document. This method is useful for applying styles to multiple elements on a single webpage, but is not recommended for larger websites because it can make the HTML code difficult to read and maintain.
 3. External stylesheets: You can create a separate CSS file and link to it from the HTML document using the `<link>` element in the head of the HTML document. This method is recommended for larger websites because it allows you to separate the styling from the HTML code, which makes the code easier to read and maintain.
 
-```javascript
+```html
 // inline style
 <p style="color:red; font-size:24px;">This is a paragraph</p>  
 

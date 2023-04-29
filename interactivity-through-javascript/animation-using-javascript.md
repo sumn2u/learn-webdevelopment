@@ -7,8 +7,8 @@ The `setInterval` function takes a callback function and a delay in milliseconds
 Example:
 
 ```javascript
-var i = 0;
-var intervalID = setInterval(function() {
+let i = 0;
+let intervalID = setInterval(() =>{
   console.log(i);  // prints 0, 1, 2, 3, 4, 5, ...
   i++;
   if (i > 5) {
@@ -34,11 +34,11 @@ The `requestAnimationFrame` function tells the browser to execute a callback fun
 Example:
 
 ```javascript
-var start = null;
-var element = document.getElementById("myElement");
-function animate(timestamp) {
+let start = null;
+let element = document.getElementById("myElement");
+const animate = (timestamp) => {
   if (!start) start = timestamp;
-  var progress = timestamp - start;
+  let progress = timestamp - start;
   element.style.left = Math.min(progress / 10, 200) + "px";
   if (progress < 2000) {
     requestAnimationFrame(animate);

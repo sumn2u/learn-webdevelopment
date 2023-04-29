@@ -8,7 +8,7 @@ To create an ordered list in HTML, you can use the `<ol>` element and nest `<li>
 
 Here is an example of an ordered list in HTML:
 
-```javascript
+```html
 <ol>
   <li>Item 1</li>
   <li>Item 2</li>
@@ -20,7 +20,7 @@ To create an unordered list in HTML, you can use the `<ul>` element and nest `<l
 
 Here is an example of an unordered list in HTML:
 
-```javascript
+```html
 <ul>
   <li>Item 1</li>
   <li>Item 2</li>
@@ -32,7 +32,7 @@ Tables are used to display data in rows and columns. To create a table in HTML, 
 
 Here is an example of a simple table in HTML:
 
-```javascript
+```html
 <table>
   <tr>
     <th>Name</th>

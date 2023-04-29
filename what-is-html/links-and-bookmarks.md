@@ -4,7 +4,7 @@ HTML links allow you to create hyperlinks that allow users to navigate between w
 
 Here is an example of how to create a link to another webpage:
 
-```javascript
+```html
 <a href="https://www.example.com">Click here to visit example.com</a>
 ```
 
@@ -12,7 +12,7 @@ You can also create a link to a specific section of the same webpage using the `
 
 Here is an example of how to create a link to a specific section of the same webpage:
 
-```javascript
+```html
 <a href="#section2">Go to Section 2</a>
 ...
 <h2 id="section2">Section 2</h2>
@@ -22,7 +22,7 @@ HTML bookmarks allow you to create links that allow users to jump to specific se
 
 Here is an example of how to create a bookmark and a link to it:
 
-```javascript
+```html
 <a href="#section2">Go to Section 2</a>
 ...
 <h2 id="section2">Section 2</h2>
@@ -30,7 +30,7 @@ Here is an example of how to create a bookmark and a link to it:
 
 Bookmarks are often used to create a table of contents for a webpage, where each item in the table of contents is a link to a specific section of the page.
 
-```javascript
+```html
 <h1>Table of Contents</h1>
 <ul>
   <li><a href="#section1">Section 1</a></li>

@@ -4,7 +4,7 @@ HTML (Hypertext Markup Language) is a standard markup language for creating web 
 
 HTML uses "`tags`" to structure content. A tag is a piece of code that is inserted into the HTML document and is made up of a keyword surrounded by angle brackets. For example, the following code creates a paragraph element in HTML:
 
-```javascript
+```html
 <p>This is a paragraph</p> 
 ```
 

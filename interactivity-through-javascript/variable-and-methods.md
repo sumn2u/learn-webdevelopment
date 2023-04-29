@@ -7,7 +7,7 @@ To declare a variable in JavaScript, you can use the `var` keyword followed by t
 Example:
 
 ```javascript
-var x;
+let x;
 ```
 
 You can also assign a value to a variable when you declare it.
@@ -15,7 +15,7 @@ You can also assign a value to a variable when you declare it.
 Example:
 
 ```javascript
-var x = 10;
+let x = 10;
 ```
 
 In JavaScript, variables can be reassigned and their values can be changed.
@@ -23,7 +23,7 @@ In JavaScript, variables can be reassigned and their values can be changed.
 Example:
 
 ```javascript
-var x = 10;
+let x = 10;
 x = 20;
 ```
 
@@ -32,10 +32,10 @@ JavaScript supports different types of data, including numbers, strings, boolean
 Example:
 
 ```javascript
-var x = 10;       // number
-var y = "hello";  // string
-var z = true;     // boolean
-var obj = {};     // object
+let x = 10;       // number
+let y = "hello";  // string
+let z = true;     // boolean
+let obj = {};     // object
 ```
 
 JavaScript methods are functions that are associated with objects. They are used to perform actions or to compute and return a value.
@@ -45,7 +45,7 @@ To define a method in JavaScript, you can use the `function` keyword followed by
 Example:
 
 ```javascript
-function add(x, y) {
+const add = (x, y) => {
   return x + y;
 }
 ```
@@ -55,7 +55,7 @@ To call a method, you can use the name of the method followed by parentheses and
 Example:
 
 ```javascript
-var result = add(10, 20);
+const result = add(10, 20);
 ```
 
 Methods can be defined on objects and can be called using the `.` operator.
@@ -63,7 +63,7 @@ Methods can be defined on objects and can be called using the `.` operator.
 Example:
 
 ```javascript
-var obj = {
+let obj = {
   name: "John",
   sayHello: function() {
     console.log("Hello, my name is " + this.name);

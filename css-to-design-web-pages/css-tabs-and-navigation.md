@@ -94,4 +94,4 @@ CSS:
 }
 ```
 
-This will create a horizontal navigation menu with links that change color when hovered over.\
+This will create a horizontal navigation menu with links that change color when hovered over.

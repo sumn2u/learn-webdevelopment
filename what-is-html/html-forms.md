@@ -6,7 +6,7 @@ To create a form in HTML, you can use the `<form>` element. The `action` attribu
 
 Here is an example of a basic HTML form:
 
-```javascript
+```html
 <form action="/submit-form" method="post">
   <label for="name">Name:</label><br>
   <input type="text" id="name" name="name"><br>
